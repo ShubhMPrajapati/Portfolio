@@ -16,16 +16,16 @@
    <title>Document</title>
 
    <style>
-      .header{
+      .header {
          position: fixed;
          top: 0;
-            left: 0;
-            width: 100%;
-            /*     */
-            
-            padding: 15px;
-            text-align: center;
-            z-index: 1000;
+         left: 0;
+         width: 100%;
+         /*     */
+
+         padding: 15px;
+         text-align: center;
+         z-index: 1000;
       }
    </style>
 </head>
@@ -37,20 +37,29 @@
    <div class="main-container">
       <div id="first" class="slides">
 
-         <div class="first-page">
+         <div id="home" class="first-page">
 
             <div class="header">
-
-               <div class="header-lefts">
-                  <img class="profile-img" src="images/Adobe Express - file-photoaidcom-cropped.png" alt="">
-                  <h2 class="default-text">Shubham Prajapati</h2>
-               </div>
+               <a href="#home">
+                  <div class="header-lefts">
+                     <img class="profile-img" src="images/Adobe Express - file-photoaidcom-cropped.png" alt="">
+                     <h2 class=" heading default-text">Shubham Prajapati</h2>
+                  </div>
+               </a>
 
                <div class="header-right">
-                  <a href="#first">
-                  <h2 class="heading default-text">Home</h2></a>
-                  <h2 class="heading default-text" href="/about">About</h2>
-                  <h2 class="heading default-text" href="/Contact">Contact Me</h2>
+                  <a href="#home">
+                     <h2 class="heading default-text">Home</h2>
+                  </a>
+                  <a href="#projects">
+                     <h2 class="heading default-text">Projects</h2>
+                  </a>
+                  <a href="#about">
+                     <h2 class="heading default-text">About</h2>
+                  </a>
+                  <a href="#contact">
+                     <h2 class="heading default-text">Contact </h2>
+                  </a>
                </div>
 
             </div>
@@ -83,25 +92,60 @@
 
 
 
+   <!-- Project Section -->
 
 
-
-   <div id="second" class="slides">
+   <div id="projects" class="slides">
       <div class="project-section">
-         <div class="line default-text home">
-            <h1 class="heading default-text" href="/#">Projects</h1>
-         </div>
+         <a href="https://github.com/ShubhMPrajapati/Python-Projects">
+            <div class="line default-text home">
+
+               <h1 class="heading default-text"> Check out some amazing Python Projects</h1>
+
+            </div>
+         </a>
+
          <div class="line default-text about">
             <h1 class="heading default-text" href="/about">About</h1>
          </div>
+
          <div class="line contact ">
             <h1 class="heading default-text" href="/Contact">Contact Me</h1>
          </div>
-
       </div>
-
    </div>
-   <div id="third" class="slides">
+
+   <!-- About Section -->
+
+   <div id="about" class="slides">
+      <div class="mid-section">
+         <h3 class="intro default-text sld">A Full-Stack Developer, AI/ML enthusiast and part-time DJ/Music
+            Producer
+         </h3>
+      </div>
+   </div>
+
+   <!-- Contact Section -->
+
+   <div id="contact" class="slides">
+
+
+      <form action="submit" method="post" style=" padding: 20px; border-radius: 10px; height: 500px; width:1000px; margin: auto; box-shadow: 2px 2px 10px rgba(0,0,0,0.4);">
+         <label for="fname" style="font-weight: bold;">First name:</label>
+         <input type="text" id="fname" name="fname" style="margin-bottom: 10px; padding: 5px; width: 100%;"><br>
+ 
+         <label for="lname" style="font-weight: bold;">Last name:</label>
+         <input type="text" id="lname" name="lname" style="margin-bottom: 10px; padding: 5px; width: 100%;"><br>
+ 
+         <label for="msg" style="font-weight: bold;">Type Your Message:</label>
+         <input type="text" id="msg" name="msg" style="margin-bottom: 10px; padding: 5px; height: 200px;width: 100%;"><br>
+ 
+         <input type="submit" value="Submit" style="background-color: #aea8b6; color: rgb(0, 0, 0); padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer;">
+     </form>
+     
+
+
+      <!-- Footer -->
       <footer>
          <div class="footer-header social-icons">
 
