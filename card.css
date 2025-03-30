@@ -1,15 +1,15 @@
 
 
 .card {
-    width: 350px;
-    height: 250px;
+    width: 300px;
+    height: 200px;
  
     /* margin: 1rem auto; */
     perspective: 1000px;
     cursor: pointer;
-    
    
   }
+
   
   .card-inner {
     position: relative;
@@ -37,6 +37,7 @@
   }
   
   .card-front {
+    
     background: white;
     border: 1px solid #000000;
     color: #000000;
@@ -93,6 +94,13 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+
+  .card-font{
+    font-family: cursive;
+    color: #000000;  
+  font-weight: 900;
+font-size: 1rem;
+}
 
 
   
