@@ -23,11 +23,14 @@
       href="https://fonts.googleapis.com/css2?family=Boldonse&family=Delius&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ramaraja&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
     <link rel="stylesheet" href="portfolio.css" />
     <link rel="stylesheet" href="/first-page.css" />
     <link rel="stylesheet" href="/second-page.css" />
     <link rel="stylesheet" href="/card.css" />
+    <link rel="stylesheet" href="/footer.css" />
+    <link rel="stylesheet" href="/contac.css">
   </head>
 
   <body>
@@ -48,7 +51,7 @@
           <a href="#projects">
             <h3 class="heading default-text">Projects</h3>
           </a>
-          <a href="#about">
+          <a href="#">
             <h3 class="heading default-text">About</h3>
           </a>
           <a href="#contact">
@@ -77,62 +80,87 @@
 
       <!-- Second Page -->
       <div id="projects" class="second-page">
-         <div class="wrapper">
-            <div class="container">
-                <input type="radio" name="slide" id="c1" checked>
-                <label for="c1" class="card">
-                    <div class="row">
-                        <div class="icon">1</div>
-                        <div class="description">
-                            <h4>Winter</h4>
-                            <p>Winter has so much to offer -
-                             creative activities</p>
-                        </div>
-                    </div>
-                </label>
-                <input type="radio" name="slide" id="c2" >
-                <label for="c2" class="card">
-                    <div class="row">
-                        <div class="icon">2</div>
-                        <div class="description">
-                            <h4>Digital Technology</h4>
-                            <p>Gets better every day -
-                             stay tuned</p>
-                        </div>
-                    </div>
-                </label>
-                <input type="radio" name="slide" id="c3" >
-                <label for="c3" class="card">
-                    <div class="row">
-                        <div class="icon">3</div>
-                        <div class="description">
-                            <h4>Globalization</h4>
-                            <p>Help people all over the world</p>
-                        </div>
-                    </div>
-                </label>
-                <input type="radio" name="slide" id="c4" >
-                <label for="c4" class="card">
-                    <div class="row">
-                        <div class="icon">4</div>
-                        <div class="description">
-                            <h4>New technologies</h4>
-                            <p>Space engineering becomes
-                             more and more advanced</p>
-                        </div>
-                    </div>
-                </label>
+        <div class="class-grid">
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front etl-front">  <!-- ETL Pipeline with Apache Kafka -->
+               
             </div>
+              <div class="card-back etl-back">Real-Time ETL Pipeline using Apache Kafka, Spark, and Hive</div>
+            </div>
+          </div>
+
+
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front python-front">Python Projects
+            </div>
+              <div class="card-back Python-back">Check out some of my cool Python projects & scripts - no bugs (I hope)! 🐍😆</div>
+            </div>
+          </div>
+
+
+
+
+
+
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front memory-game">Color Memory Challenge </div>
+              <div class="card-back">Test your memory in this fun, colorful game. Repeat the sequence or face the shame!🌈🧠😆</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front ott-recommendation ">OTT Platform Recommendation System</div>
+              <div class="card-back">Too many movies, too little time? 🎬 This ML-powered recommender finds your next favorite flick using smart filtering. So you can binge without the guesswork! 🍿🤖</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front weather-app">Weather App</div>
+              <div class="card-back">WeatherApp: Because guessing the weather with your window is so last season! ☀️🌧️❄️</div>
+            </div>
+          </div>
+
         </div>
       </div>
 
       <!-- Third Page -->
-      <div id="about" class="third-page">
-         
-      </div>
+      <!-- <div id="about" class="third-page"></div> -->
 
       <!-- Fourth Page -->
-      <div id="contact" class="fourth-page"></div>
+      <div id="contact" class="fourth-page">
+
+         <form>      
+            <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+            <input name="email" type="text" class="feedback-input" placeholder="Email" />
+            <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+            <input type="submit" value="SUBMIT"/>
+          </form>
+          <h4 class="copyright">© 2025 <Span class="name heading-name">Shubham </Span> <!-- | All rights reserved. -->
+          </h4>
+      </div>
+      
+
+
+      
+      <ul>
+         <li>
+            <a href="#"><i class="fab fa-linkedin-in icon"></i></a></li>
+            <li>
+               <a href="#"><i class="fab fa-github icon"></i></a>
+         <li>
+           <a href="#">
+             <i class="fab fa-facebook-f icon"></i>    </a>
+         </li>
+         
+         </li>
+         
+         <li>
+           <a href="#"><i class="fab fa-youtube icon"></i></a></li>
+       </ul>
     </div>
   </body>
 </html>
