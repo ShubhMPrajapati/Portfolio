@@ -375,3 +375,80 @@ a {
        font-size: calc(0.5rem + 30px);
    }
 }
+
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 3%;
+  transform: translate(-50%, -50%);
+  margin-left: 10px;
+  gap: 2px;
+}
+
+.social-item {
+  list-style: none;
+}
+
+.social-item a {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 30px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+}
+
+.social-item a .icon {
+  position: relative;
+  color: #262626;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.social-item a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.social-item a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.social-item a:hover:before {
+  top: 0;
+}
+
+/* Background colors for each social item */
+.social-item:nth-child(1) a:before {
+  background: #0077b5; /* LinkedIn */
+}
+
+.social-item:nth-child(2) a:before {
+  background: #0e0e0e; /* GitHub */
+}
+
+.social-item:nth-child(3) a:before {
+  background: #3b5999; /* Facebook */
+}
+
+.social-item:nth-child(4) a:before {
+  background: #d22008; /* YouTube */
+}
